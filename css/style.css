@@ -1,0 +1,177 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* style for the first quarter */
+.first {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+li , a , .smalltext {
+    list-style-type: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 5px 0;
+}
+#logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.bigtext {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    margin: 36px;
+}
+
+.item {
+    padding: 16px;
+    margin: 16px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.image {
+    font-family : 'roboto' , 'times' , 'serif';
+    background-color: #e5e7eb9b ;
+    width: 350px;
+    height: 200px;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #E5E7EB ;
+}
+
+button {
+    background-color: #3882e6 ;
+    border-radius: 10px;
+    color: #f9faf8 ;
+}
+
+/* style for the second quarter */
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    padding: 16px;
+}
+
+.card {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #3882e6 ;
+    border-radius: 10px;
+}
+
+.text {
+    width: 130px;
+    color: grey;
+}
+
+/* the style for the third quarter */
+
+.third {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+blockquote {
+    width:780px;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 0;
+}
+
+p.quote {
+    margin-top: 0;
+    font-weight: bolder;
+    margin-left: 580px;
+}
+
+/* the style for the fourth quarter */
+.fourth {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe {
+    background-color: #3882e6;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.form {
+    padding: 16px;
+    color: #f9faf8 ;
+}
+span {
+    color: #E5E7EB;
+}
+
+div.subscribe > button {
+    border: 1px solid white;
+}
+
+/* the style for the footer*/
+.footer {
+    background-color: #1F2937 ;
+    color: #f9faf8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
