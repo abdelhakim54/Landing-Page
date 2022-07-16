@@ -1,13 +1,11 @@
-
 body{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
 }
 /* style for the first quarter */
 .first {
     background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
 }
 
 li , a , .smalltext {
@@ -18,21 +16,20 @@ li , a , .smalltext {
 }
 
 ul {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    padding: 5px 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding: 4px 2px;
 }
+
 #logo {
     font-size: 24px;
     color: #f9faf8;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    gap: 17px;
+    gap: 16px;
+    padding: 0 8px;
 }
 
 .bigtext {
@@ -42,9 +39,7 @@ ul {
 }
 
 .container {
-    display: flex;
     justify-content: space-evenly ;
-    align-items: center;
     margin: 36px;
 }
 
@@ -52,8 +47,6 @@ ul {
     padding: 16px;
     margin: 16px;
     width: 350px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     align-items: flex-start;
 }
@@ -61,13 +54,10 @@ ul {
 .image {
     font-family : 'roboto' , 'times' , 'serif';
     background-color: #e5e7eb9b ;
-    width: 350px;
-    height: 200px;
-    margin: 16px;
-    display: flex;
+    width: 400px;
+    height: 250px;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    border-radius: 12px;
     color: #E5E7EB ;
 }
 
@@ -75,8 +65,18 @@ button {
     background-color: #3882e6 ;
     border-radius: 10px;
     color: #f9faf8 ;
+    padding: 8px 16px;
+}
+/*refactoring*/
+.first,.item{
+    display: flex;
+    flex-direction: column;
 }
 
+ul,.links,.image,.container{
+    display: flex;
+    align-items: center;
+}
 /* style for the second quarter */
 
 .second {
@@ -100,15 +100,18 @@ button {
 }
 
 .card {
-    width: 130px;
     height: 130px;
     border: 2px solid #3882e6 ;
     border-radius: 10px;
 }
 
 .text {
-    width: 130px;
     color: grey;
+    text-align: center;
+}
+
+.card , .text{
+    width: 130px;
 }
 
 /* the style for the third quarter */
@@ -118,11 +121,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
+    padding: 48px 200px;
 }
 
 blockquote {
-    width:780px;
     font-size: 36px;
     font-weight: light;
     font-style: italic;
@@ -133,23 +135,23 @@ blockquote {
 p.quote {
     margin-top: 0;
     font-weight: bolder;
-    margin-left: 580px;
+    margin-left: auto;
 }
 
 /* the style for the fourth quarter */
+.fourth,.subscribe {
+    display: flex;
+    align-items: center;
+}
 .fourth {
     padding: 32px;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .subscribe {
     background-color: #3882e6;
     width: 70%;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 16px;
     border-radius: 10px;
 }
@@ -159,6 +161,7 @@ p.quote {
     color: #f9faf8 ;
 }
 span {
+    display: block;
     color: #E5E7EB;
 }
 
@@ -167,11 +170,9 @@ div.subscribe > button {
 }
 
 /* the style for the footer*/
-.footer {
+footer {
     background-color: #1F2937 ;
-    color: #f9faf8;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #f9faf8; 
+    padding: 16px;
+    text-align: center;
 }
